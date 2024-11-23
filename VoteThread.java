@@ -9,9 +9,16 @@ package com.mycompany.online.voting.system;
  * @author Acer
  */
 public class VoteThread extends Thread{
-    
+    private Voting votingSystem;
+    private String voteOption;
+
+    public VoteThread(Voting votingSystem, String voteOption) {
+        this.votingSystem = votingSystem;
+        this.voteOption = voteOption;
+    }
+
     @Override
-    public void run(){
-        
+    public void run() {
+        votingSystem.castVotes(voteOption);
     }
 }
