@@ -18,7 +18,7 @@ public class Polls extends Voting {
         super(question);
     }
     @Override
-    public synchronized void castVote(String option){
+    public synchronized void castVotes(String option){
         if(option.equalsIgnoreCase("a")){
             a_votes ++;
         }
@@ -35,7 +35,7 @@ public class Polls extends Voting {
             System.out.println("Please enter a valid option");
         }
         totalvotes ++;
-        SaveToFile("Poll Vote:" + option + "pollresults.txt");   
+        SaveToFile("Poll Vote:" + option, "pollresults.txt");   
 }
     @Override
     public synchronized void displayResults(){
