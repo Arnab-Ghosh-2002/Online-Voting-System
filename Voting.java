@@ -19,8 +19,8 @@ abstract class Voting {
         this.question = question;
     }
     
-    public abstract castVotes(String response);
-    public abstract displayResults();
+    public abstract void castVotes(String option);
+    public abstract void displayResults();
     
     protected void SaveToFile(String data, String filename){
         synchronized(this){
