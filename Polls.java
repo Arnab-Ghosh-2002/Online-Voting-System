@@ -35,7 +35,7 @@ public class Polls extends Voting {
             System.out.println("Please enter a valid option");
         }
         totalvotes ++;
-        SaveToFile("Poll Vote:" + option, "pollresults.txt");   
+        SaveToFile("Poll Vote:" + option, "pollsresults.txt");   
 }
     @Override
     public synchronized void displayResults(){
