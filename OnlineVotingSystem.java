@@ -80,7 +80,7 @@ public class OnlineVotingSystem {
                             break;
                         }
                         
-                        votingSystem.SaveToFile("Open-ended Response: " + suggestion, "openEndedResponses.txt");
+                        votingSystem.SaveToFile("Open-ended Response: " + suggestion, "openEndedResponse.txt");
                     }
                 }
 
