@@ -26,7 +26,7 @@ public abstract class SurveySystem {
         }
         if (validOption) {
             totalvotes++;
-            SaveToFile("Survey Vote:" + option, "surveyresults.txt");
+            SaveToFile("Survey Vote:" + option, "surveysresults.txt");
         } else {
             System.out.println("Please enter a valid option.");
         }
